@@ -1,0 +1,241 @@
+﻿html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+    color: silver;
+    background-image: url("./images/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top,
+.middle,
+.bottom,
+.header,
+.footer{
+    margin: 20px;
+    padding: 10px;
+}
+
+.allcards{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-shrink: 0;
+}
+
+.cardimage {
+    width: 250px;
+    height: 140px;
+    box-shadow: 0 0 3px 3px silver;
+    border-radius: 10px;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.cardimage:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.cardtext {
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+.middletext {
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(230, 230, 230);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    min-width: 100px;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.top > .left {
+    min-height: 200px;
+    max-width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top .first {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    flex: initial;
+    margin: 0;
+}
+
+.top .second {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top img {
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 0 3px 3px silver;
+}
+
+.top button {
+   align-self: flex-start;
+}
+
+button {
+    min-width: 100px;
+    background-image: linear-gradient(dimgrey, white, dimgrey);
+    color: darkslategrey;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid slategrey;
+    opacity: 0.6; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+button:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.header {
+    display: flex;
+}
+
+.header > .left {
+    flex: none;
+    margin-right: auto;
+    display: flex;
+    gap: 16px;
+}
+
+.header > .right {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slider {
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
+.header img {
+    height: 100%;
+    opacity: 50%;
+}
+
+.header img:hover {
+    opacity: 1;
+}
+
+.footer {
+    margin-top: auto;
+    height: 30px;
+}
+
+.preset {
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+    background-color: rgb(255, 255, 255, 10%);
+    padding: 10px;
+    margin: 50px;
+}
+
+.preset .left {
+    width: 80%;
+    margin-right: 40px;
+}
+
+.preset .left p {
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.preset hr {
+    opacity: 50%;
+}
+
+.preset ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.preset button {
+    flex-grow: 0;
+    align-self: center;
+}
+
+
+.overalladj {
+    margin-bottom: 100px;
+}
+
+.overalladj ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.overalladj li {
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+    padding: 20px;
+}
+
+.overalladj li .slider {
+    width: 100%;
+}
